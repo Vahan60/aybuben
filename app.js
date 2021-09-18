@@ -133,7 +133,7 @@ for (let i = 0; i < alphabet.length; i++){
       cell[i].addEventListener("click", function( ) {
 	    activeCell = i;
         for (let j = 0; j < img.length; j++) {
-	      img[j].src = "pic/".concat(inset[activeCell][j].concat(".png"))		 
+	      img[j].src = "pic/".concat(inset[activeCell][j].concat(".webp"))		 
           };
 	    location.href="#shellLetter"	  
 	   }) 
