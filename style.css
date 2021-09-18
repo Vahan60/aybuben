@@ -21,8 +21,8 @@ body{
 }
 
 #alphabet {
-    width: 90%;
-	height: 80%;
+    width: 98vw;
+	height: 98vh;
     border: 2px solid transparent;
 	border-collapse:separate;
     border-spacing:10px 10px;
