@@ -106,17 +106,10 @@ body{
    margin-top: 2vh;
    display: flex;
    flex-direction: row;
-   justify-content: flex-start;
-}
-
-#shell {
-   width: 90%;
-   height: 95%; 
-   background: transparent;
-   display: flex;
-   flex-direction: row;
    justify-content: flex-end;
 }
+
+
 
 .area {
   width: 8vw;
