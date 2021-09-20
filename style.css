@@ -3,28 +3,28 @@ html, body {
 }
 
 body{
-	background-image: url(f2.webp);
-	background-repeat: repeat;
-	display: flex;
-	flex-direction: column;
+    background-image: url(f2.webp);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;	
 }
 
 #shellAlphabet {
     width: 100vw;
-	height: 100vh;
+    height: 100vh;
     background: transparent;
-	display: flex;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;  /* flex-start */
     justify-content: center;
 }
 
 #alphabet {
     width: 98vw;
-	height: 98vh;
+    height: 80vh ; /*98vh;*/
     border: 2px solid transparent;
-	border-collapse:separate;
+    border-collapse:separate;
     border-spacing:10px 10px;
 	
 }
