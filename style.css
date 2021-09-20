@@ -3,63 +3,69 @@ html, body {
 }
 
 body{
-    width: 100%;
-    height: 100%;
-    background-image: url(f2.webp);
-    background-repeat: repeat;
-    display: flex;
-    flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-image: url(f2.webp);
+	background-repeat: repeat;
+	display: flex; 
+	flex-direction: column;
     align-items: center;
     justify-content: center;	
 }
 
 #shellAlphabet {
     width: 90vw;
-    height: 98vh;
-    background: transparent;
-    display: flex;
-    align-items:  center ;
+	height: 98vh;
+    border: 2px solid blue;
+	display: flex; 
+    align-items: center;
     justify-content: center;
+	
 }
 
 #alphabet {
-    width: 98vw;
-    height: 80vh;
-    border: 2px solid transparent;
+    width: 86vw;
+	height: 90vh;
+    border: 2px solid black;
+	display: flex; 
+    align-items: center;
+    justify-content: center;
     border-collapse:separate;
-    border-spacing:10px 10px;
-	
+    border-spacing:5px 5px;	
 }
 
 #alphabet .highlight {
     background: transparent;
 }
 .cell {
-    width: 10%;
-    height: 10%;
+    width: 10vw;
+    height: 13vh;
 	background: linear-gradient(to right, #FFFF00, #FFA07A);
 	border-radius: 25px;
 	color: #000080;
 	font-family: cursive;
 	font-style: italic;
-	font-size: 3.5vw;	
+	font-size: 3vw;	
 }
 
 #btn0 {
-    width: 10%;
-    height: 10%;
+    width: auto;
+    height: 10vh;
 	border: 2px solid gray;
 	border-radius: 25px;
-/*  background: linear-gradient(to right, #98FB98, #000000);	
+    /*background: linear-gradient(to right, #98FB98, #000000);	
 	color: aqua;
 	font-style: normal;
-	font-size: 50%;
-    font-weight: 100;*/	
+	font-size: 3vw;
+    font-weight: 100;	
+	display:  flex;
+    align-items: center;
+    justify-content: center;*/
 }
 
 #btn1{
-    width: 10%;
-    height: 10%;
+     width: 10vw;
+    height: 13vh;
 	border: 1px solid transparent;
 	background-image: url(fsc.png);
 	background-repeat: no-repeat;
@@ -79,75 +85,34 @@ body{
 
 #shellLetter {
     width: 90vw;
-    height: 98vh;
-    background: transparent;
-    display: flex;
+	height: 98vh;
+    border: 2px solid red;
+	margin-top: 2vh;
+	display: flex; 
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
 }
 
 #letter {
-    width: 90vw;
-    height: 80vh;
-    border: 1px solid transparent;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
+    width: 86vw;
+	height: 90vh;
+    border: 2px solid black;
+	display: flex; 
+	flex-direction: column;	
     align-items: center;
     justify-content: center;
 }
 
+
 #cont {
    width: 86vw;
-   height: 66vh;   
-   border: 1px solid transparent;
+   height: 66vh; 
+   border: 1px solid red;
    background: transparent ;
    margin-top: 2vh;
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
-}
-
-
-
-.area {
-  width: 8vw;
-  height: 64vh;
-  margin: 0px 3px 0px 3px;
-  border: 2px solid LightGrey;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-  background: transparent;
-   
-}
-
-.fond {
-   width: 65vw;
-   height: 64vh;
-   object-fit: cover;
-   position: absolute;	
-}
-
-.area:target { 
-  width: 65vw; 
-  height: inherit;
-}
-
-#toabc {
-   width: 7vw;
-   height: 64vh;
-   font-style: italic;
-   font-size: 3.5vw;
-   color: #BA55D3;
-   background: linear-gradient(to right, #FFFF00, #FFA07A);
-   border: 2px solid #FFA07A;
-   border-radius: 20px;
-   margin-left: 1%; 
-   display:  flex;
-   align-items: center;
-   justify-content: center;
 }
 
 #say {
@@ -162,6 +127,45 @@ body{
 }
 
 #say b { color: red; }
+
+.area {
+  width: 8vw;
+  height: 64vh;
+  margin:0 2px 0 2px;
+  border: 2px solid LightGrey;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+   
+}
+
+#toabc {
+   width: 8vw;
+   height: 64vh;
+   margin-top: 0;
+   font-style: italic;
+   font-size: 3.5vw;
+   color: #BA55D3;
+   background: linear-gradient(to right, #FFFF00, #FFA07A);
+   border: 2px solid #FFA07A;
+   border-radius: 20px;
+   display:  flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.fond {
+   width: 65vw;
+   height: 64vh;
+   object-fit: cover;
+   position: absolute;	
+}
+
+.area:target { 
+  width: 65vw; 
+  height: inherit;
+}
 
 #warning {
 	position: absolute;
