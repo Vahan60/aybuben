@@ -16,13 +16,13 @@ body{
     height: 100vh;
     background: transparent;
     display: flex;
-    align-items:  flex-start ;
+    align-items:  center ;
     justify-content: center;
 }
 
 #alphabet {
     width: 98vw;
-    height: 98vh;
+    height: 80vh;
     border: 2px solid transparent;
     border-collapse:separate;
     border-spacing:10px 10px;
@@ -77,21 +77,21 @@ body{
 
 #shellLetter {
     width: 100vw;
-	height: 100vh;
+    height: 100vh;
     background: transparent;
-	display: flex;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
     justify-content: center;
-	margin-top: 5vh;
+    margin-top: 5vh;
 }
 
 #letter {
     width: 90vw;
-	height: 98vh;
+    height: 80vh;
     border: 1px solid transparent;
-	margin: 0px;
-	display: flex;
-	flex-direction: column;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
