@@ -16,13 +16,13 @@ body{
     height: 100vh;
     background: transparent;
     display: flex;
-    align-items: center;  /* flex-start */
+    align-items:  flex-start ;
     justify-content: center;
 }
 
 #alphabet {
     width: 98vw;
-    height: 80vh ; /*98vh;*/
+    height: 98vh;
     border: 2px solid transparent;
     border-collapse:separate;
     border-spacing:10px 10px;
