@@ -1,21 +1,45 @@
 html, body {overflow:hidden;}
 
-#conteyner{
-	width: 97vw;
-	height: auto;
-	border: 1px solid transparent;
-    display: grid;
-	justify-items: center;
-	align-items: center;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	grid-gap: 5vh;
+body { background-image: url(pic/background29.png);
+	   background-repeat: repeat;
 }
+	   
+ * {
+    margin: 0;
+    padding: 0;
+   }
+
+/*===============================*/
+.zero {
+	width: 99vw;
+	height: 1vh;
+	border: 1px solid transparent;
+	background: transparent;
+	
+}
+
+.field {
+	width: 100vw;
+	height: 97vh;
+	border: 1px solid transparent;
+	
+}
+
+#fieldOne {
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	
+/*===============================*/
+
+
 #alphabet {
     width: 80vw;
 	height: 92vh;
     border: 1px solid transparent;
-	margin-top: 0.5vh;
+
     display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-rows: repeat(5, 1fr);
@@ -24,14 +48,41 @@ html, body {overflow:hidden;}
 
 .cell{
 	
-    border: 1px solid #DCDCDC;
+    border: 3px solid #DCDCDC;
 	background: linear-gradient(to right, #FFFF00, #FFA07A);
 	border-radius: 10px;	
 	font-size: 3vw;
 	font-weight: 700;
+	color: 	#2F4F4F;
 }
 
-.cell:focus { background:transparent;}
+
+#cell40 {
+	border: 3px solid yellow;
+	border-radius: 10px;
+	background: transparent;
+    display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+ #btn {
+           width: 50%;
+           height: 50%;  
+		   border-bottom: 10px solid red;
+           border-right: 10px solid red;
+           border-left-color: transparent;
+           border-top-color: transparent;
+           
+}
+           
+ body:fullscreen  #btn{
+           border-bottom-color: transparent;
+           border-right-color: transparent;
+           border-left: 10px solid red;
+           border-top: 10px solid red;
+        
+}
 
 
 
@@ -44,44 +95,30 @@ html, body {overflow:hidden;}
 	.lang { font-weight: 700; font-size: 4vw;}
 }
 
-#shellLetter { 
-        width: 95vw;
-        height: 94vh;
+/*============================*/
+
+#fieldTwo {
+	background: transparent;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#letter { width: 90%; 
+        height: 100%;	
 		border: 1px solid transparent;	
-        	
-}
-#letter{ width: 94vw; 
-        height: 90vh;	
-		border: 1px solid transparent;
-		margin-top: 2vh;
-        display: grid;
-	    grid-template-columns: 4fr 1fr;
-		grid-template-rows: 1fr 4fr ;   		
-}
+        display: grid;		
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);	}
+		
+    #letter > * { margin: 3px;}
 
-.say, .pic {
-      display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  border: 1px solid transparent;
-}
-
-.say { color: #BA55D3; font-size: 7vw;}
-
-.say b { color: red; }
-
-
-.pic IMG {
-   width: auto;
-   max-height: 70%;
-   border-radius : 5vw; 
-   object-fit: contain;
-   position: absolute;	
-}
-
-.keypad {grid-column-start: 2;
-	     grid-row: 1/3;
-		 display: grid;
+#flag {
+	  border: 3px solid #00FF00;
+	  border-radius: 15px;
+	  grid-row: 1/5;    
+      grid-column-start: 1;	
+	     display: grid;
 		 grid-template-columns:1fr;
 	     grid-template-rows: 1fr 1fr 1fr 1fr;
 		 grid-row-gap: 2vh;
@@ -89,47 +126,103 @@ html, body {overflow:hidden;}
 		 align-items: stretch;
 }
 
-.key {border: 3px solid transparent;
-      border-radius: 3vw;
-	  background: #E6E6FA;
+#keypad {
+	  grid-row: 1/5;    
+      grid-column-start: 6;	
+	     display: grid;
+		 grid-template-columns:1fr;
+	     grid-template-rows: 1fr 1fr 1fr 1fr;
+		 grid-row-gap: 2vh;
+		 justify-content: stretch;
+		 align-items: stretch;
+}
+
+.key, .flag1 {
+	  background:/* #E6E6FA;*/ transparent;
       display: grid;
       justify-items: center;
       align-items: center;
 }
 
+.key {border: 3px solid transparent;
+      border-radius: 15px;}
+	  
+.flag1 {
+	  background: transparent;
+}	  
+
+.fond, .fond1 {width: 80%; height: 80%;}
 .toAlphabet {font-size: 3vw; color: red;} 
+.toAlphabet1 {font-size: 3vw; color: red;} 
 
-.fond {width: 16vh; height: 16vh;}
+#say {
+	  grid-column: 2/6;    
+      grid-row: 1/2;
+}
 
+#pic {
+	 grid-column: 2/6;    
+     grid-row: 2/5;
+}
 
+#pic IMG {
+   width: auto;
+   max-height: 65%;
+   border-radius : 5vw; 
+   object-fit: contain;
+   position: absolute;	
+}
+
+#say, #pic {
+      display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  border: 1px solid transparent;
+}
+
+#say { color: #BA55D3; font-size: 7vw;}
+
+#say b { color: red; }
+
+/*===================================*/
 
 @media (orientation: portrait) {
-    #shellLetter { width: 90vw; height: 95vh;}	
 	
-	#letter {width: 90vw;
-             height: 90vh;
-             margin-top: 0;				
-		     display: grid;
-		     grid-template-columns:1fr;
-	         grid-template-rows: 1fr 4fr 1fr;}
-			   
-	.pic { grid-row-start: 2;}
-	
-	.pic IMG { max-width: 85%; height: auto;}
-	
-	.keypad {grid-row-start: 3;
-	     grid-column: 1/3;
-		 display: grid;
-		 grid-template-rows:1fr;
-	     grid-template-columns: 1fr 1fr 1fr 1fr;
-		 grid-column-gap: 2vh;
-		 justify-content: stretch;
-		 align-items: stretch; }
-	
-    .say {font-size: 14vw;}
-	
-	.toAlphabet {font-size: 4vw;} 
-	
-	.fond {width: 16vw; height: 16vw;}
+#letter { width: 90%; 
+        height: 98%;	
+        display: grid;		
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);	
+}
 
+
+#flag {
+	  grid-row: 1;    
+      grid-column: 1/5;	
+	     grid-template-rows:1fr;
+	     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#keypad {
+	  grid-row: 6;    
+      grid-column: 1/5;
+         grid-template-rows:1fr;
+	     grid-template-columns: 1fr 1fr 1fr 1fr;	  
+}
+
+.toAlphabet, .toAlphabet1  {font-size: 5vw;} 
+
+#say {
+      font-size: 14vw;  
+	  grid-column:1/5;    
+      grid-row: 2/3;
+}
+
+#pic {
+	 
+	 grid-column: 1/5;    
+     grid-row: 3/6;
+}
+
+#pic IMG { max-width: 85%; height: auto;}
 }
