@@ -20,7 +20,7 @@ body { background-image: url(pic/background29.png);
 
 .field {
 	width: 100vw;
-	height: 90vh;
+	height: 97vh;
 	border: 1px solid transparent;
 	
 }
@@ -36,9 +36,9 @@ body { background-image: url(pic/background29.png);
 
 
 #alphabet {
-    width: 80vw;
-	height: 92vh;
-    border: 1px solid transparent;
+        width: 80vw;
+	height: 80vh;
+        border: 1px solid transparent;
 
     display: grid;
 	grid-template-columns: repeat(8, 1fr);
