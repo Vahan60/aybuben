@@ -169,4 +169,3 @@ btn.addEventListener("click", function () {
     }
 
 }, false);
-	  
